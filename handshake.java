@@ -10,8 +10,10 @@ public class Handshakes {
    	 	n=sc.nextInt();
    	 	total=n*(n-1)/2;
    	 	System.out.println ("total no of handshakes" +  " = " + total+ " ");
-   	 	
-}
+   	 	System.out.println("done with handshake");
+   	 	System.out.println("still not done with handshake");
+
+   	 	}
     
     
 }
