@@ -722,7 +722,11 @@ let passCheker = function(myString1){
 
 console.log(passCheker(userPassword)); // o/p ->true
 
-
+let numOne = 22 ;
+let numTwo = 7 ;
+let result = 22/7 ;
+console.log(result);
+console.log(result.toFixed(2));
 
 
 
