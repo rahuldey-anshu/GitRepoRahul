@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+    function fn1()
+    {
+var str = document.getElementById("text").value ;
+var str1 = document.getElementById("password").value ;
+if(str === str1)
+{
+    alert("username and password are same");
+}
+else
+alert("username and password are not same");
+    }
+</script>
+
+</head>
+<body>
+    <input type="text" id="text" placeholder="Enter username">
+    <br><br>
+    <input type="password" id="password" placeholder="Enter password">
+<br><br>
+    <button onclick="fn1()">Click me</button>
+</body>
+</html>

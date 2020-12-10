@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function fn1()
+    {
+        var s = document.getElementById("selectbox");
+        alert(s.options[s.selectedIndex].value);
+    }
+    </script>
+
+</head>
+<body>
+    <select  id="selectbox">
+        <option value="Fullstack Developer">Fullstack Developer</option>
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="Java Developer">Java Developer</option>
+        <option value="Database Administrator">Database Administrator</option>
+        <option value="Mern Developer">Mern Developer</option>
+    </select>
+    
+    <button onclick="fn1()">click me</button>
+</body>
+</html>

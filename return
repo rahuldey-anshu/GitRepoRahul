@@ -1,0 +1,68 @@
+[33mcommit 18e24ef6a8a0e6b7dff863efefa2b68ebb1e5d9a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Apr 19 16:15:22 2020 +0530
+
+    New lines are added
+
+[33mcommit 158071cd3e0bf85d789e9a31081c787dca569674[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Apr 19 13:49:18 2020 +0530
+
+    app.js is commited
+
+[33mcommit b77c3daaf051c43ccb5331c80946146bc98bb163[m
+Author: Rahul_Dey <62499367+rahuldey-anshu@users.noreply.github.com>
+Date:   Sun Mar 22 20:22:58 2020 +0530
+
+    Create README.md
+
+[33mcommit 1491144145abc3d57e100b3c417978b3476f7276[m
+Merge: f68ae29 0c3eeb9
+Author: Rahul_Dey <62499367+rahuldey-anshu@users.noreply.github.com>
+Date:   Sun Mar 22 20:20:16 2020 +0530
+
+    Merge pull request #1 from rahuldey-anshu/dev
+    
+    New change in dev branch
+
+[33mcommit 0c3eeb92728316c8642b17813d02b776681849e3[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 20:05:33 2020 +0530
+
+    New change in dev branch
+
+[33mcommit f68ae2958215f2ff563c941598faa472d654806d[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 18:54:58 2020 +0530
+
+    dev branch has changed 1
+
+[33mcommit f7850ee3e808ddc5d559b8a940cd8ae5dfa07ac1[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 18:40:02 2020 +0530
+
+    retrieve again
+
+[33mcommit 380bbe064059e168c0a63e07fcbbd119144fd5dc[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 18:32:37 2020 +0530
+
+    Helloworld file got commited
+
+[33mcommit fd9e7a582b45c9923e56d9bab4570e52b42a6a53[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 18:31:51 2020 +0530
+
+    index.html file is commited
+
+[33mcommit 964e946cc0c34a9dc5b6110e55317de495de0526[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 18:08:09 2020 +0530
+
+    index.html commited
+
+[33mcommit 6863dc8b623eea288a9e52075933fd4fa09b0f55[m
+Author: Rahul Dey <rd90963@gmail.com>
+Date:   Sun Mar 22 18:03:23 2020 +0530
+
+    Handshake program initial commit

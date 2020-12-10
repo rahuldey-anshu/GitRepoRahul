@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var day = 87 ;
+
+        switch(day)
+        {
+            case 1 :
+            document.write("<h2>Sunday</h2>") ;
+            break ;
+             
+            case 2 :
+                document.write("<h2>Monday</h2>") ;
+            break;
+
+            case 3 : 
+            document.write("<h2>Tuesday</h2>") ;
+            break;
+
+            case 4 : 
+            document.write("<h2>Wednesday</h2>") ;
+            break;
+
+            case 5 : 
+            document.write("<h2>Thursday</h2>") ;
+            break;
+
+            case 6 : 
+            document.write("<h2>Friday</h2>") ;
+            break;
+
+            case 7 : 
+            document.write("<h2>Satday</h2>") ;
+            break;
+
+            default :
+            document.write("<h2>Wrong Input</h2>") ;
+
+        }
+
+        for(var i=1 ; i<=10 ; i++)
+        {
+            document.write("<h2>" + (5*i) + "</h2>" )
+        }
+
+        //Function in JS
+
+        function addNumbers()
+        {
+            var a = 2 ;
+            var b = 3 ;
+            var total = a + b ;
+            document.write("<h2>total summation is : " + total + "</h2>");
+        }
+        addNumbers() ;
+
+        //Array in JS
+        var cars = ["BMW" , "VOLVO" , "AUDI"] ;
+        cars.push("MERCEDES");
+        cars.push(20) ;
+        for(var j=0 ; j<cars.length ; j++)
+        {
+            document.write("<h2>" + cars[j] + "</h2>");
+        }
+        
+        //Object in JS
+
+        var car = {
+            car_brand : "Tesla" ,
+            car_model : "Model-3" ,
+            price : 97000000, 
+
+            teslaAutoPilot : function()
+            {
+    return "This car has auto pilot features" ;         
+        }
+    }
+ document.write("<h2>" + car.car_brand + "  "  + car.car_model + "  " +  car.price +   "  " + car.teslaAutoPilot()  + "</h2>");
+
+//Constructor function
+
+function cars1(car1_brand , car1_model , price1)
+{
+    this.car1_brand = car1_brand ;
+    this.car1_model = car1_model ;
+    this.price1 = price1 ;
+    this.teslaAutoPilot = function() 
+    {
+        document.write("this car has auto pilot features") ;
+    }
+
+}
+var c1 = new cars1("Maruti" , "Swift" , "475000");
+    document.write("<h2>" + c1.car1_brand +  "  "  + c1.car1_model + "  " +  c1.price1 +   "  " + car.teslaAutoPilot()  +  "</h2>") ;
+
+
+
+      
+    </script>
+    
+</body>
+</html>

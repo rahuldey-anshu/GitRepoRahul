@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //spread operator
+let student = [1,2,3,4] ;
+
+let course1 = ["java","Reactjs" , "MongoDB"] ;
+
+let lab = [...student, ...course1];
+console.log(lab);
+
+//creating object
+var contact = {
+    name : "Rahul",
+    id : 20 ,
+    gendar : "male",
+    priorities: {
+        hobbies: ["travelling" , "playing guiter" , "chess"],
+        profession : "developer"
+    },
+    contact_no: [
+    {
+        phone:9875459983 ,
+        typr: "work",
+    },
+    {
+       phone:  7278812112,
+       type: "home",
+    }
+   ]
+}
+
+console.log(contact);
+
+//diff betn '==' & '===' operator
+var a= 10 ;
+var b ='10';
+if(a === b)
+{
+    console.log("Values are matching");
+}
+else
+console.log("Values are not matching");
+
+//this keyword
+
+  class C1 {
+
+    tax = 10 ;
+
+    calculateTax() {
+        console.log("Tax is" + this.tax);
+        console.log("this is to caculate tax");
+
+    }
+
+    readCreadential() {
+        this.calculateTax();
+        console.log("this is to read creadential");
+    }
+
+}
+
+console.log(navigator.vendor);
+console.log(navigator.appVersion);
+console.log(navigator.appName);
+console.log(navigator.platform);
+
+var Student = ["RD"  ,  "KD"  , "SD" , "PD"];
+console.log(Student);
+var arrops = Student.shift();
+console.log(arrops);
+console.log(Student);
+
+Student.unshift("RAHUL", "Spiderman");
+console.log(Student);
+
+//Template Literals in ES6 or Interpolation
+var city = 'Kolkata' ;
+var state = 'WestBengal'
+var address = `Address is: ${city} ${state}` ; 
+console.log(address);
+
+
+//NaN
+console.log(typeof NaN === 'number');
+
+//Arrow function and Callback function
+var skills = [
+    {
+    language: "Core Java",
+    isDone: true,
+} , {
+    language: "C++",
+    isDone: false,
+    }, 
+    {
+    language: "JavaScript",
+    isDone: true,
+    },
+    {
+        language: "Ruby on Rails",
+        isDone: false,
+    },
+]
+
+const done = skills.filter((check)=> check.isDone == false 
+);
+
+console.log(done);
+
+
+//clone of an abject 
+
+const course ={ 
+    courseDetails:[
+    {
+    courseName: "MERN" ,
+    isDone : false  
+    },
+    {
+    courseName: "MEAN" ,
+    isDone : true  
+    },
+    {
+    courseName: "ML" ,
+    isDone : true  
+    }
+    ],
+    department : "CSE",
+    id: 1551 
+
+}
+
+var newCourse = Object.assign({} , course)
+
+ console.log(newCourse);
+
+function getStatus(){
+    if(document.getElementById('checkbox').checked)
+    {
+        console.log("Checkbox is checked");
+    }
+    else
+    console.log("Checkbox is unchecked");
+}
+//escape() function used for coding a string 
+
+console.log(escape("How are you Rahul"));
+
+//unescape() function used for decoding a string 
+
+console.log(unescape("How%20are%20you%20Rahul"));
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="checkbox" onblur="getStatus()">I love JavaScript
+</body>
+</html>

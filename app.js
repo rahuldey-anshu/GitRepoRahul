@@ -696,6 +696,7 @@ console.log(taskList1.taskLeft());      //you have 12 tasks left
 //------------------------------------------------------------------------------------
 //check Username & password
 //also check mdn documentation in GooGle
+/* --Comment Start
 let userEmail = 'rd90963' ;
 let userPassword = 'Rdey1996@#' ;
 
@@ -721,20 +722,70 @@ let passCheker = function(myString1){
 }
 
 console.log(passCheker(userPassword)); // o/p ->true
+//------------------------------------------------------------------------------
 
 let numOne = 22 ;
 let numTwo = 7 ;
 let result = 22/7 ;
-console.log(result);
-console.log(result.toFixed(2));
+console.log(result);  //3.142857142857143
+// console.log(result.toFixed(2)); // o/p -> 3.14
+let floatRes = result.toFixed(2) ;
+console.log(Math.floor(floatRes)); // o/p -> 3
+console.log(Math.ceil(floatRes));  // o/p -> 4
+
+console.log(Math.random()) ;  //getting random no between (0 and 1)
+//console.log(Math.random()) ;
+console.log(Math.random() * 20 +1) ;
+// using this concept build a dice-roller which give (1-6) posibilities
+//Comment End 
+*/ 
+let upper = 6 ;
+let lower = 1 ;
+
+let myRandom = Math.floor(Math.random() * (upper - lower + 1)) + lower; // random no will generate between 1 to 6
+
+console.log(myRandom);
+//--------------------------------------------------------------------------------
 
 
+//Search from Array of Objects 
+const myTodos = ['Buy Bread' , 'Go to Gym' , 'Studying'] ; // myTodos is an array
+console.log('line no 753' + "-> " +myTodos.indexOf('Buy Bread')) ;  // o/p -> 0
+console.log('line no 754' + "-> " +myTodos[myTodos.indexOf('Go to Gym')]) ; // o/p ->Go to Gym
+//--------------------------------------------------------------------------------
+//Array of Objects
+const newTodos = [{            // newTodos is an array filled up with objects
+    title : 'Buy Bread',
+    isDone : false ,
+} ,
+ {
+     title : 'Go to Gym',
+     isDone : false ,
+ } ,
+  {
+      title : 'Studying' ,
+      isDone : true ,
+  }] ; 
 
+  const index = newTodos.findIndex(function(todo , index){
+    
+   // console.log(todo);
+    return todo.title === 'Studying' ;
 
+  })
 
+// console.log(index) ;
+ 
 
+  const findTodo = function(anyTodos , title){
+      const index = anyTodos.findIndex(function(todo, index){
+          return todo.title.toLowerCase() === title.toLowerCase() ;
+      })
+      return anyTodos[index] ;
+    }
 
-
+    let printMe = findTodo(newTodos , 'Go To Gym')
+    console.log(printMe);
 
 
 

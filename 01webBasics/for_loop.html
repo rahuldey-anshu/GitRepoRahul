@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        var subjects = new Array("Math" , "English" , "Science") ;
+        marks = new Array();
+        for(var i=0 ; i<subjects.length ; i++)
+        {
+            num = prompt("Enter yours marks in :" + subjects[i] ) ;
+            marks[i] = parseFloat(num);
+        }
+        msg = "" ;
+        // for(var i=0 ; i<subjects.length; i++)
+        for(i in subjects)
+        {
+            msg+= subjects[i] + " "  +"Marks:=" + marks[i] + "\n" ;
+            alert(msg);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function validate()
+    {
+    var Username = document.getElementById("user");
+    var Password = document.getElementById("pass") ;
+    if(Username.value.trim() === "")
+    {
+        Username.style.border = "solid 3px red" ;
+        document.getElementById("lbl").style.visibility = "visible";
+        //alert("username cant be blank") ;
+        return false ;
+    }
+    else if(Password.value.trim() === "")
+    {
+        Password.style.border = "solid 3px red" ;
+        document.getElementById("lbl1").style.visibility = "visible";
+        alert("password cant be blank");
+        
+        return false ;
+    }
+    else if(Password.value.trim().length<5)
+    {
+        alert("Password should be more than 5 characters") ;
+        return false ;
+    }
+    else
+    {
+        true ;
+    }
+}
+    </script>
+
+</head>
+<body>
+    <form onsubmit = "return validate()" action="message.html">
+
+           <input id="user" type="text" placeholder="Username"/>
+           <label id = "lbl" style="color: red; visibility: hidden;">Invalid username</label>
+    <br><br>
+    <input id = "pass" type="password" placeholder="Password" />
+    <label id = "lbl1" style="color: red; visibility: hidden;">Invalid password</label>
+    <br><br>
+<button>click me</button>
+</form>
+ 
+</body>
+</html>
